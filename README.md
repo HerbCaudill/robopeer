@@ -29,7 +29,7 @@ though. So what happens if they're **not online at the same time?**
 
 ![](img/robopeer-without.png)
 
-🤖 Robopeer is a peer, like Alice or Bob. But unlike Alice and Bob, Robopeer **never goes offline**.
+🤖 **Robopeer** is a peer, like Alice or Bob. But unlike Alice and Bob, Robopeer **never goes offline**.
 
 ![](img/robopeer-with.png)
 
@@ -66,8 +66,6 @@ You can choose from one of these implementations, or create your own.
 
 `POST /create`
 
-##### Parameters
-
 **`accessKey`** <small>required</small>  
 The access key with which the server was instantiated.
 
@@ -79,11 +77,12 @@ connect to the relay. This can also be thought of as a "discovery key" or a "cha
 A unique identifier for the Robopeer's client. Depending on the protocol you are using, this might
 be a username or a device ID that the other peers might recognize.
 
-Your request body might also include parameters for the use of the specific protocol you are using: .
+> Your request body might also include parameters for the use of the specific protocol you are using.
+> For example, the `@localfirst/auth` implementation requires an invitation code.
 
 #### Destroy a Robopeer
 
-#### `/destroy`
+`POST /destroy`
 
 ### Storage
 
