@@ -1,4 +1,4 @@
-<img src="img/robopeer.png" height="100" alt="robopeer logo" />
+<img src="img/robopeer.png" height="80" alt="robopeer logo" />
 
 <!-- Works with
 
@@ -88,8 +88,20 @@ be a username or a device ID that the other peers might recognize.
 
 By default Robopeer keeps messages in memory and doesn't persist to storage.
 
-<!-- ![](img/robopeer-member.png)
+To add persistence, you can use any one of these storage plugins, or fork one of these to create your own:
+
+- [ ] robopeer-storage-mongodb
+- [ ] robopeer-storage-redis
+- [ ] etc
+
+# Doodles
+
+![](img/robopeer-member.png)
+
+---
 
 ![](img/robopeer-device.png)
 
-![](img/robopeer-details.png) -->
+---
+
+![](img/robopeer-details.png)
